@@ -2,31 +2,37 @@
   margin: 0px;
   font-family: "Roboto Mono", monospace;
 }
-.container{
+
+.container {
   background-color: aquamarine;
   height: 100vh;
 }
-.container h1{
+
+.container h1 {
   display: flex;
   justify-content: center;
   color: seagreen;
 
 }
-.bill-box{
+
+.bill-box {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 90%;
   margin: auto;
   background-color: whitesmoke;
   /* padding: 1%; */
 }
-.left-box{
+
+.left-box {
   padding: 10%;
 }
-.right-box{
-  background-color:seagreen;
+
+.right-box {
+  background-color: seagreen;
   height: 100%;
 }
-.right-box h2{
+
+.right-box h2 {
   color: white;
 }
