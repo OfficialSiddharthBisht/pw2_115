@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useState} from "react";
+
 const RightBox = ({
   tipAmount,
   total,
@@ -13,6 +14,7 @@ const RightBox = ({
   <h2>Total/ person ${total}</h2>
 
     {/* Add button to RESET */}
+    <button onClick={(e)=>console.log("Reset")}>Reset</button>
   </div>;
 };
 
