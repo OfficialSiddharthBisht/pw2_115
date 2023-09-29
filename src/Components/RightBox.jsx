@@ -7,6 +7,7 @@ const RightBox = ({
   handleBill,
   handleTip,
   handlePeople,
+  reset
 }) => {
   return <div className="right-box">
     {/* Add tip Amount and total here */}
@@ -14,7 +15,7 @@ const RightBox = ({
   <h2>Total/ person ${total}</h2>
 
     {/* Add button to RESET */}
-    <button onClick={(e)=>console.log("Reset")}>Reset</button>
+    <button onClick={(e)=>reset()}>Reset</button>
   </div>;
 };
 

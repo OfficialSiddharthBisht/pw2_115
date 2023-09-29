@@ -20,13 +20,17 @@ const LeftBox = ({ handleTip, handleBill, bill, people, handlePeople }) => {
       <input type="number" placeholder = "Custom" value={tip}
       onChange = {(e)=>{
         handleBill(e.target.value)
+        setTip(e.target.value)
       }}
       />
       </div>
       {/* Add input for no.of peoples */}
       <label for="noOfPeople">Number Of People</label>
       <input type="number" id="noOfPeople" value={noOfPeople}
-      onChange={(e)=>handlePeople(e.target.value)}
+      onChange={(e)=>{
+        handlePeople(e.target.value)
+        setNoOfPeople(e.target.value)
+      }}
       />
     </div>
   );
